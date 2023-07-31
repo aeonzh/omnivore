@@ -39,5 +39,7 @@
     "node": "18.16.1",
     "yarn": "1.22.19"
   },
-  "dependencies": {}
+  "dependencies": {
+    "node-gyp": "^8.0.0"
+  }
 }
