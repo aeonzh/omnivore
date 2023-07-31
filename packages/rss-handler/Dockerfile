@@ -1,4 +1,4 @@
-FROM node:14.18-alpine
+FROM node:18.16-alpine
 
 # Run everything after as non-privileged user.
 WORKDIR /app
@@ -23,4 +23,3 @@ RUN yarn install --pure-lockfile --production
 EXPOSE 8080
 
 CMD ["yarn", "workspace", "@omnivore/rss-handler", "start"]
-
